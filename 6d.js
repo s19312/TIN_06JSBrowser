@@ -1,7 +1,5 @@
 function addRecord(tableName) {
-    const table = document
-        .getElementById(tableName)
-        .getElementsByTagName('tbody')[0];
+    const table = document.getElementById(tableName).getElementsByTagName('tbody')[0];
 
     const firstName = document.getElementById('firstName');
     const lastName = document.getElementById('lastName');
