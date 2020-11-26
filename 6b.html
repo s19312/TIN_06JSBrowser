@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>s19312_6b</title>
+</head>
+<body>
+<div id="6b">
+</div>
+<script >
+    document.getElementById('6b').addEventListener('onload', setTimeout(fun, 5000));
+    function fun() {
+        const paragraph = document.createElement('p').innerHTML = 'This is a paragraph of text to the page after 5 seconds from opening the page';
+        document.getElementById('6b').append(paragraph);
+    }
+</script>
+</body>
+</html>

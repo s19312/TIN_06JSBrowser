@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script defer src="6d.js"></script>
+    <title>s19312_6d</title>
+    <style>
+        #table{
+            width: 65%;
+            border: 2px dashed red;
+        }
+        th,td {
+            border: 1px solid black;
+        }
+        tr {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table id="table">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+    </tr>
+</table>
+<form id="addRecord" class="addRecord">
+    <label>Firstname</label>
+    <input id="firstName" type="text" required />
+    <label>Lastname</label>
+    <input id="lastName" type="text" required />
+    <button id="submitBtn" onclick="addRecord('table')">Add Person</button>
+</form>
+</body>
+</html>

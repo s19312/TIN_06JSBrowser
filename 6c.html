@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script defer src="6c.js"></script>
+    <title>s19312_6c</title>
+</head>
+<style>
+    .incorrectInput {
+        border: 3px dashed red;
+    }
+    .correctInput {
+        border: 3px dashed green;
+    }
+</style>
+<body>
+<form>
+    <label>age</label>
+    <input id="age" class="age" type="number" required/>
+    <br>
+    <label>email</label>
+    <input id="email" class="email" type="text" required/>
+    <br>
+    <button id="formBtn" onclick="return isFormCorrect()">Submit</button>
+</form>
+</body>
+</html>

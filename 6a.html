@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>s19312_6a</title>
+</head>
+<body>
+<form>
+    <label>Celsius to Fahrenheit:</label><br>
+    <input id="inputCelcius" type="text"/>
+    <input id="outputFahrenheit" type="text" disabled/>
+    <button id="cToF">submit</button>
+</form>
+<form>
+    <label>Fahrenheit to Celsius:</label><br>
+    <input id="inputFahrenheit" type="text"/>
+    <input id="outputCelcius" type="text" disabled/>
+    <button id="fToC">submit</button>
+</form>
+<script>
+    document.getElementById("cToF").addEventListener("click", (event) => {
+        event.preventDefault();
+        fromCToF(document.getElementById("inputCelcius").value);
+    });
+
+    function fromCToF(value) {
+        document.getElementById("outputFahrenheit").value = Math.round(value * 9 / 5 + 32);
+    }
+//----------------------------------------------------------------------
+    document.getElementById("fToC").addEventListener("click", (event) => {
+        event.preventDefault();
+        fromFToC(document.getElementById("inputFahrenheit").value);
+    });
+
+    function fromFToC(value) {
+        document.getElementById("outputCelcius").value = Math.round(((value - 32) * 5) / 9);
+    }
+</script>
+</body>
+</html>
